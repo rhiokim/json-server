@@ -75,11 +75,20 @@ module.exports = function (source) {
   }
 
   router.use(function (req, res) {
-    if (!res.locals.data) {
-      res.status(404)
-      res.locals.data = {}
+    var data = {
+      "success": true,
+      "errors": [],
+      "messages": [],
+      "result": res.locals.data
     }
 
+    if (!res.locals.data) {
+      res.status(404)
+      data.success = false
+      data.result = []
+    }
+
+    res.locals.data = data
     router.render(req, res)
   })
 

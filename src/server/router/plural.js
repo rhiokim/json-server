@@ -2,7 +2,6 @@ var express = require('express')
 var _ = require('lodash')
 var pluralize = require('pluralize')
 var utils = require('../utils')
-var uuid = require('node-uuid')
 
 module.exports = function (db, name) {
 
@@ -210,8 +209,6 @@ module.exports = function (db, name) {
       req.body[key] = utils.toNative(req.body[key])
     }
 
-    req.body.id = uuid.v4();
-    
     var resource = db(name)
       .insert(req.body)
 

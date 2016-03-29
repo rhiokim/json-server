@@ -50,7 +50,7 @@ function createId (coll) {
       return ++id
     } else {
       // Generate string id
-      return uuid()
+      return uuid.v4()
     }
   }
 }

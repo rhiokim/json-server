@@ -1,0 +1,32 @@
+{
+  "zones": [
+    {
+      "name": "wave6.do",
+      "author": "rhio@wave.do",
+      "created_at": "",
+      "service_type": 0,
+      "area": 0,
+      "dedicated": 0,
+      "id": "a"
+    },
+    {
+      "name": "wave6.do",
+      "author": "rhio@wave.do",
+      "created_at": "",
+      "service_type": 0,
+      "area": 0,
+      "dedicated": 0,
+      "id": "aacafa50-eb4f-439a-acd7-b40ee7f72c4f"
+    },
+    {
+      "name": "wave6.do",
+      "author": "rhio@wave.do",
+      "created_at": "",
+      "service_type": 0,
+      "area": 0,
+      "dedicated": 0,
+      "id": "4a76a43e-35e6-4802-bcbb-367328156f3c"
+    }
+  ],
+  "records": []
+}
