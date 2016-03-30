@@ -249,7 +249,9 @@ module.exports = function (db, name) {
     })
 
     if (resource) {
-      res.locals.data = {}
+      res.locals.data = {
+        id: resource.id
+      }
     }
 
     next()
